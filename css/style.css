@@ -24,3 +24,156 @@
   src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
     url("../fonts/Roboto-Bold.woff") format("woff");
 }
+
+:root {
+	--basic-white: #FFFFFF;
+	--basic-black: #000000;
+	--basic-dark-grey: #373737;
+	--basic-grey: #4E4E4E;
+	--basic-blue: #00AFDB;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  font-family: "Roboto", "Arial", sans-serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+*, *::before, *::after { 
+  box-sizing: border-box; 
+}
+
+a {
+	text-decoration: none;
+	color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-wrapper {
+	width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-header {
+
+}
+
+.main-nav {
+	position: relative;
+	margin: 0 auto;
+}
+
+.main-nav__list {
+	list-style: none;
+	margin: 0;
+	padding: 39px 0 37px 0;
+	display: flex;
+	justify-content: center;
+	padding-right: 15px;
+}
+
+.main-nav__item {
+	color: var(--basic-white);
+	text-align: center;
+	font-size: 14px;
+}
+
+.main-nav__item:nth-child(4n + 1) {
+	margin-right: 85px;
+}
+
+.main-nav__item:nth-child(4n + 3) {
+	margin-left: 245px;
+	margin-right: 83px;
+}
+
+.main-nav__link {
+	color: var(--basic-white);
+	padding-bottom: 3px;
+}
+
+.main-nav__link:hover, .main-nav__link--active {
+	border-bottom: 2px solid var(--basic-white);
+}
+
+.main-nav__logo {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -42%);
+	top: 50%; 
+}
+
+.page-main {
+	font-size: 20px;
+	color: var(--grey-blue);
+}
+
+.start {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -93px;
+	padding-top: 234px;
+	padding-bottom: 83px;
+	background-image: url("../assets/img/your-life-bg.png");
+}
+
+.start__title {
+	color: var(--basic-white);
+	font-size: 64px;
+	letter-spacing: 4.5px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.start__text {
+	font-size: 18px;
+	color: var(--basic-white);
+	text-align: center;
+	line-height: 140%;
+	margin: 0;
+	margin-bottom: 31px;
+	width: 504px;
+}
+
+.start__button {
+	color: var(--basic-white);
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: var(--basic-blue);
+	margin-bottom: 183px;
+	padding: 15px 47px;
+}
+
+.social__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 30px;
+}
+
+.social__img:hover {
+	opacity: 0.5;
+}
