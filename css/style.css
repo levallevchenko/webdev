@@ -32,6 +32,7 @@
 	--basic-grey: #4E4E4E;
 	--basic-blue: #00AFDB;
 	--basic-dark-blue: #009CC2;
+	--basic-light-grey: #F5F6F7;
 }
 
 .page {
@@ -187,6 +188,10 @@ img {
 }
 
 .social__img:hover {
+	opacity: 0.7;
+}
+
+.social__img:active {
 	opacity: 0.5;
 }
 
@@ -228,3 +233,117 @@ img {
 	order: 1;
 	margin-right: 109px;
 }
+
+.community {
+	padding: 120px 0 140px 269px;
+	background-color: var(--basic-light-grey);
+	overflow: hidden;
+	display: grid;
+	grid-gap: 0 108px;
+	grid-auto-flow: column;
+}
+
+.community__description {
+	width: 299px;
+	margin-top: 100px;
+}
+
+.community__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 2.4px;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--basic-dark-grey);
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.community__text {
+	margin: 0;
+	font-size: 14px;
+	line-height: 144%;
+	text-align: center;
+	color: var(--basic-grey);
+}
+
+.community__slider-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 864px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 0 30px;
+}
+
+.community__slider-item {
+	width: 407px;
+	height: 244px;
+}
+
+.community__slider-img {
+	width: 407px;
+	height: 244px;
+}
+
+.subscription {
+	background-image: url("../assets/img/sign-up.png");
+	padding: 217px 269px 277px 269px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subscription__title {
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 1px;
+	color: var(--basic-white);
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.subscription__form {
+	display: flex;
+}
+
+.subscription__input {
+	border: none;
+	padding: 12px;
+	padding-left: 25px;
+	width: 341px;
+	outline: none;
+}
+
+.subscription__input:focus {
+	border: 2px solid var(--basic-blue);
+	padding: 10px;
+	padding-left: 23px;
+}
+
+.subscription__input::-webkit-input-placeholder {font-size: 14px; line-height: 140%;}
+.subscription__input::-moz-placeholder          {font-size: 14px; line-height: 140%;}
+.subscription__input:-moz-placeholder           {font-size: 14px; line-height: 140%;}
+.subscription__input:-ms-input-placeholder      {font-size: 14px; line-height: 140%;}
+
+.subscription__button {
+	position: relative;
+	border: none;
+	padding: 0 33px;
+	background-color: var(--basic-blue);
+	outline: none;
+}
+
+.subscription__button::before {
+	content: "";
+	position: absolute;
+	width: 19px;
+	height: 16.52px;
+	background-image: url("../assets/img/icon-check.svg");
+	background-repeat: no-repeat;
+	transform: translate(-50%, -50%);
+}
+
