@@ -244,8 +244,19 @@ img {
 }
 
 .community__description {
+	position: relative;
 	width: 299px;
 	margin-top: 100px;
+}
+
+.community__description::before {
+	content: "";
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	transform: translate(-50%, -65px);
+	left: 50%;
+	background-image: url("../assets/img/icon-community.png");
 }
 
 .community__title {
@@ -346,4 +357,47 @@ img {
 	background-repeat: no-repeat;
 	transform: translate(-50%, -50%);
 }
+
+.download {
+	flex-direction: column;
+}
+
+.download__text {
+	width: 483px;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.download__links {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0 30px;
+	font-weight: 700;
+}
+
+.download__link {
+	position: relative;
+	margin-right: 60px;
+	padding: 17px 18px;
+}
+
+.download__link::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 50px;
+	background-color: var(--basic-dark-blue);
+	background-repeat: no-repeat;
+	background-position: center;
+	left: 100%;
+	top: 0;
+}
+
+.download__link--apple::before {
+ background-image: url("../assets/img/icon-apple.svg");
+}
+
+.download__link--android::before {
+	background-image: url("../assets/img/icon-android.svg");
+ }
 
