@@ -106,12 +106,16 @@ img {
 }
 
 .main-nav__link {
-	color: var(--basic-white);
-	padding-bottom: 3px;
+	padding-bottom: 5px;
+	background: 
+      linear-gradient(currentColor 0 0) 
+      0 100% /var(--d, 0) 2px 
+    no-repeat;
+  transition:0.4s;
 }
 
 .main-nav__link:hover, .main-nav__link--active {
-	border-bottom: 2px solid var(--basic-white);
+	--d: 100%;
 }
 
 .main-nav__link:active {
@@ -523,11 +527,16 @@ img {
 }
 
 .more-info__link {
-	padding-bottom: 3px;
+	padding-bottom: 5px;
+	background: 
+      linear-gradient(currentColor 0 0) 
+      0 100% /var(--d, 0) 2px 
+    no-repeat;
+  transition:0.4s;
 }
 
 .more-info__link:hover {
-	border-bottom: 2px solid var(--basic-white);
+	--d: 100%;
 }
 
 .more-info__link:active {
